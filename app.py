@@ -31,7 +31,7 @@ def generate_response(question,api_key,llm,temperature,max_tokens):
     return answer
 
 #App
-st.title("Enhanced Q&A chatbot with OpenAI")
+st.title("Q&A chatbot with OpenAI")
 st.sidebar.title("Settings")
 api_key=st.sidebar.text_input("Enter your OpenAI API Key:",type="password")
 llm=st.sidebar.selectbox("Select an OpenAI model",["gpt-4o","gpt-4-turbo","gpt-4"])
